@@ -1,8 +1,8 @@
-package com.standav.emp;
+package com.my.cc;
 
 public class StringToCamelcase {
 
-public static String ToCamelCase(String inputString) {
+public static String toCamelCase(String inputString) {
        String result = "";
        if (inputString.length() == 0) {
            return result;

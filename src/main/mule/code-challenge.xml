@@ -139,12 +139,12 @@ output application/json
         <ee:transform xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" doc:id="b49dc3c0-f900-48f0-8faa-ae95d6d809ef">
             <ee:message>
                 <ee:set-payload><![CDATA[%dw 2.0
-import java!com::standav::emp::StringToCamelcase
+import java!com::my::cc::StringToCamelcase
 
 output application/json
 ---
 { 
-	"output":StringToCamelcase::ToCamelCase (payload)
+	"output":StringToCamelcase::toCamelCase (payload)
 }]]></ee:set-payload>
             </ee:message>
         </ee:transform>
